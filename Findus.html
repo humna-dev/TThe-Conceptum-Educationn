@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Us</title>
+    <style>
+        /* Basic styling for the page */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative; /* To make sure the button stays within the main content area */
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        address {
+            font-style: normal;
+            color: #666;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+        }
+
+        /* Responsive styling */
+        @media screen and (max-width: 600px) {
+            main {
+                padding: 10px;
+            }
+        }
+
+        /* Go Back button styling */
+        .go-back-button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .go-back-button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Find Us</h1>
+    </header>
+    <main>
+        <!-- Go Back button -->
+        <button class="go-back-button" id="GoBack">Go Back</button>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.005234356789!2d67.013303976361!3d24.863670813800574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33e114dc3b65d%3A0x8835f59f569cfcd!2zQWFzYSBKYWxhbCBTY2hvb2wg2KLYs9inINis2YTYp9mEINiz24zaqdmG2ojYsduMINin2LPaqdmI2YTblA!5e0!3m2!1sen!2s!4v1694953637594!5m2!1sen!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+        <h2>Our Location</h2>
+        <p>We are located at:</p>
+        <address>
+            Gazdarabad, Garden East , Ranchore line , Marwaari Lines, Karachi, Karachi City, Sindh 74200, Karachi, Pakistany
+        </address>
+        
+        <h2>Contact Information</h2>
+        <p>Email: mustufachohan9@gmail.com</p>
+        <p>Phone:  0322 2214594</p>
+    </main>
+
+    <footer>
+        &copy; 2023 The Conceptum Education. All rights reserved.
+    </footer>
+
+    <script>
+        // JavaScript function to go back to the previous page
+        const findUsButton = document.getElementById("GoBack");
+
+        findUsButton.addEventListener("click", function () {
+            // Replace 'newpage.html' with the URL of the page you want to open
+            window.location.href = "index.html";
+        });
+    </script>
+</body>
+</html>
